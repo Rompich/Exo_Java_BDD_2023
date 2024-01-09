@@ -56,6 +56,7 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
     <% for (int k = cpt; k >= 1; k--) { %>
+        <%= "  " %>
         <% for (int l = 1 ; l <= k ; l++) { %>
          <%= "*" %>
         <% } %>
@@ -67,12 +68,16 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
-    <% for (int i = 0; i < cpt; i++) { %>
-        <% for (int j = 0; j <(i+1); j++) { %>
-         <%= " *" %>
-        <% } %>
-    </br>
-    <% } %>
+    <% for (int k = cpt; k >= 1; k--) { %>
+    <% for ( j=0 ; j<$value ; j++ ){ %>
+    <% for ( k=0 ; k<($value-j) ; k++ ) %>
+    <%= " " %>
+    <% for ( i=0 ; i<(j+1) ; i++ ) { %>
+    <%= "*" %>  
+</br>
+<% } %>
+<% } %>
+<% } %>
 </p>
 
 <h2>Exercice 5 : Triangle isocele</h2>
