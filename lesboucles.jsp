@@ -56,7 +56,7 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
     <% for (int i = 0; i < cpt; i++) { %>
-        <% for (int j = 0; j <(cpt-1); j++) { %>
+        <% for (int j = 0; j < cpt-1; j++) { %>
          <%= "*" %>
         <% } %>
     </br>
