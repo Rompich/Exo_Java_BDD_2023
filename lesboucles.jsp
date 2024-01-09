@@ -69,8 +69,8 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
     <% for (int k = cpt; k >= 1; k--) { %>
-    <% for ( j=0 ; j<$value ; j++ ){ %>
-    <% for ( k=0 ; k<($value-j) ; k++ ) %>
+    <% for ( j=0 ; j< cpt ; j++ ){ %>
+    <% for ( k=0 ; k<(cpt-j) ; k++ ) %>
     <%= " " %>
     <% for ( i=0 ; i<(j+1) ; i++ ) { %>
     <%= "*" %>  
