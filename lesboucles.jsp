@@ -21,9 +21,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-    <% for (int j = 1; j <= cpt; i++) { %>
     <%= "*" %>
-    <% } %>
     <% } %>
     </p>
 
@@ -31,9 +29,11 @@
 <p>Ecrire le code afin de produire un carré d'étoile</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
   
-<p>
+    <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-       <%= "*" %>
+    <% for (int j = 1; j <= cpt; i++) { %>
+    <%= "*" %>
+    <% } %>
     <% } %>
     </p>
     
