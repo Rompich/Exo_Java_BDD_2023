@@ -30,9 +30,9 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
   
     <p>
-    <% for (int i = 1; i <= cpt; i++) { %>
-     <%= "*" %>
-    <% for (int j = 1; j <= cpt; i++) { %>
+    <% for (int i = 0; i < cpt; i++) { %>
+    <% for (int j = 0; j < cpt; i++) { %>
+    <%= "*" %>
     <% } %>
     <% } %>
     </p>
